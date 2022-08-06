@@ -1,5 +1,6 @@
 import { createSlice, Dispatch } from "@reduxjs/toolkit";
 import axios from "axios";
+import { idParams } from "../../../componets/Movies/OneMovie";
 
 export interface CounterState {
   list: number[];

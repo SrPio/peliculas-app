@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, Navigate } from 'react-router-dom';
 import styles from "./Navbar.module.css";
 
 
@@ -9,7 +10,7 @@ function Navbar() {
         <div className={styles.options_container}>
             <div className={styles.option}>
                 <img className={styles.icon} src="/images/home-icon.svg" alt="" />
-                <h1 className={styles.title}>INICIO</h1>
+                <Link className={styles.title} to="/">INICIO</Link>
             </div>
             <div className={styles.option}>
                 <img className={styles.icon} src="/images/search-icon.svg" alt="" />

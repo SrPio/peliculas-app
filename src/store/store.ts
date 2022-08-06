@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import movies from "./slices/movies/slideMovies";
 import series from "./slices/series/slideSeries";
+import oneMovie from "./slices/movies/slideOneMovie";
 
 export const store = configureStore({
   reducer: {
     movies,
     series,
+    oneMovie,
   },
 });
 
