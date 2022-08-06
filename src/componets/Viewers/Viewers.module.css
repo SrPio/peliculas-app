@@ -1,6 +1,8 @@
 .viewer_container {
     display: flex;
     justify-content: center;
+    width: 100%;
+    padding: 0px 1rem 0px 1rem;
 }
 
 .option {
@@ -8,11 +10,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    height: 100px;
-    width: 180px;
+    height: 5%;
     border: solid 3px #353841;
     border-radius: 10px;
-    margin: 15px;
+    margin: 0.25rem;
     background: rgb(40, 42, 54);
     background: linear-gradient(180deg, rgba(40, 42, 54, 1) 0%, rgba(33, 33, 32, 1) 100%);
     -webkit-border-radius: 10px;
@@ -22,5 +23,22 @@
 }
 
 .option img {
-    height: 80px;
+    height: 25%;
+}
+
+@media (max-width: 1000px) {
+
+    .viewer_container {
+        margin-top: 0.5rem;
+        padding: 0px 0.5rem 0px 0.5rem;
+    }
+
+    .option {
+        height: 10%;
+        margin: 0.1rem;
+    }
+
+    .option img {
+        height: 55%;
+    }
 }

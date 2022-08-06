@@ -37,6 +37,16 @@ function Navbar() {
             <h1 className={styles.profile_text}>Mi perfil</h1>
             <img src="/images/profile-pic.jpg" alt="profile pic" className={styles.profile_img} />
         </div>
+        <div className={styles.navbar_mobile}>
+            <div className={styles.navbar_mobile_container}>
+            <Link to="/">
+                <img className={styles.icon} src="/images/home-icon.svg" alt="logo" />
+            </Link>
+                <img className={styles.icon} src="/images/search-icon.svg" alt="logo" />
+                <img className={styles.icon} src="/images/download-icon.svg" alt="logo" />
+                <img className={styles.profile_img} src="/images/profile-pic.jpg" alt="logo" />
+            </div>
+        </div>
     </div>
   )
 }

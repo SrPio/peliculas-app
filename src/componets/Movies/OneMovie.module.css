@@ -6,6 +6,10 @@
 
 }
 
+.backgroud_mobile {
+    display: none;
+}
+
 .filter {
     background: rgb(15, 16, 20);
     background: linear-gradient(90deg, rgba(15, 16, 20, 1) 0%, rgba(15, 16, 20, 0.7679446778711485) 35%, rgba(255, 255, 255, 0) 100%);
@@ -33,7 +37,7 @@
 
 .btn_play {
     height: 50px;
-    width: 30%;
+    width: 200px;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -61,6 +65,11 @@
     margin-top: 10px;
 }
 
+.btns_add_group {
+    display: flex;
+    flex-direction: row;
+}
+
 .btn_add,
 .btn_group {
     height: 40px;
@@ -73,4 +82,78 @@
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
     cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+
+    .backgroud_mobile {
+        height: 30%;
+        width: 100%;
+        display: inline-block;
+        object-fit: cover;
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: rgb(15, 16, 20);
+        background: linear-gradient(180deg, rgba(15, 16, 20, 1) 0%, rgba(15, 16, 20, 0.7679446778711485) 35%, rgba(255, 255, 255, 0) 100%);
+        z-index: 1;
+    }
+
+    .backgroud {
+        background-image: none !important;
+        display: flex;
+    }
+
+    .content_container {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .title {
+        font-size: 1rem;
+        color: #fff;
+        font-family: Avenir;
+    }
+
+    .description {
+        font-size: 0.5rem;
+        color: #fff;
+        font-family: Avenir;
+    }
+
+    .content_container {
+        padding: 8%;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn_play {
+        width: 100%;
+    }
+
+    .btns_add_group {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn_add,
+    .btn_group {
+        height: 40px;
+        margin-left: 20px;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        cursor: pointer;
+    }
 }
