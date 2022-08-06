@@ -6,6 +6,11 @@ Este proyecto hace parte de la prueba técnica de la empresa Developers Go.
 La prueba consiste en construir el diseño de dos pantallas que se adapten a diferentes pantallas (responsive).
 
 
+## Demo
+
+https://peliculas-app-bay.vercel.app/
+
+
 
 ## Tecnologías utilizadas
 
@@ -27,6 +32,3 @@ La prueba consiste en construir el diseño de dos pantallas que se adapten a dif
 [![localhost-3000-Samsung-Galaxy-S8-2.png](https://i.postimg.cc/cCbvWLWJ/localhost-3000-Samsung-Galaxy-S8-2.png)](https://postimg.cc/JHjrcmGw)
 
 
-## Demo
-
-Próximamente...
