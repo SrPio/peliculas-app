@@ -1,8 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { fecthOneMovie } from "../../store/slices/movies/slideOneMovie";
 import styles from "../Movies/OneMovie.module.css";
 
 export type idParams = {
@@ -22,23 +20,27 @@ function OneSerie() {
   const [serieUnit, setSeeriUnit] = useState<movieInfo>();
 
   useEffect(() => {
-    axios
-      .get(
-        `https://api.themoviedb.org/3/tv/${params.id}?api_key=a229b5918983bc728da2ec3136264745`
-      )
-      .then((response) => {
-        let posterLink = `http://image.tmdb.org/t/p/original/${response.data.poster_path}`;
-        let backdropLink = `http://image.tmdb.org/t/p/original/${response.data.backdrop_path}`;
-        setSeeriUnit({
-          name: response.data.original_name,
-          description: response.data.overview,
-          poster: posterLink,
-          backdrop: backdropLink,
+    const getSerie = () => {
+      axios
+        .get(
+          `https://api.themoviedb.org/3/tv/${params.id}?api_key=a229b5918983bc728da2ec3136264745`
+        )
+        .then((response) => {
+          let posterLink = `http://image.tmdb.org/t/p/original/${response.data.poster_path}`;
+          let backdropLink = `http://image.tmdb.org/t/p/original/${response.data.backdrop_path}`;
+          setSeeriUnit({
+            name: response.data.original_name,
+            description: response.data.overview,
+            poster: posterLink,
+            backdrop: backdropLink,
+          });
+        })
+        .catch((error) => {
+          console.log(error);
         });
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    };
+
+    getSerie();
   }, []);
 
   return (
