@@ -19,6 +19,10 @@ https://peliculas-app-bay.vercel.app/
 - Typescript 
 - React-router-dom
 
+La información de las películas que van en ese diseño viene desde la siguiente plataforma (API)
+https://developers.themoviedb.org/3/getting-started/introduction 
+
+
 ## Versión de escritorio
 
 [![screenshot-localhost-3000-2022-08-05-23-04-17.png](https://i.postimg.cc/vTB4C6pj/screenshot-localhost-3000-2022-08-05-23-04-17.png)](https://postimg.cc/G8W3y93J)
