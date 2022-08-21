@@ -1,46 +1,38 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Proyecto Web Peliculas y Series
 
-## Available Scripts
+Este proyecto hace parte de la prueba técnica de la empresa Developers Go.
 
-In the project directory, you can run:
+La prueba consiste en construir el diseño de dos pantallas que se adapten a diferentes pantallas (responsive).
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Demo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+https://peliculas-app-bay.vercel.app/
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Tecnologías utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React Hooks
+- Redux-toolkit
+- Typescript 
+- React-router-dom
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+La información de las películas que van en ese diseño viene desde la siguiente plataforma (API)
+https://developers.themoviedb.org/3/getting-started/introduction 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Versión de escritorio
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[![screenshot-localhost-3000-2022-08-05-23-04-17.png](https://i.postimg.cc/vTB4C6pj/screenshot-localhost-3000-2022-08-05-23-04-17.png)](https://postimg.cc/G8W3y93J)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[![screenshot-localhost-3000-2022-08-05-23-05-10.png](https://i.postimg.cc/G2b8Jfzb/screenshot-localhost-3000-2022-08-05-23-05-10.png)](https://postimg.cc/671pBYDP)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Versión de Móvil
 
-## Learn More
+[![localhost-3000-Samsung-Galaxy-S8-1.png](https://i.postimg.cc/8CRfvGRy/localhost-3000-Samsung-Galaxy-S8-1.png)](https://postimg.cc/GBpp0ZSY)
+[![localhost-3000-Samsung-Galaxy-S8-2.png](https://i.postimg.cc/cCbvWLWJ/localhost-3000-Samsung-Galaxy-S8-2.png)](https://postimg.cc/JHjrcmGw)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
