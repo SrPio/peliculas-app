@@ -20,11 +20,34 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
 }
 
 .option img {
     height: 25%;
+    z-index: 1;
 }
+
+.videoTag {
+    object-fit: cover;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+
+.option:hover .videoTag {
+    display: block;
+}
+
+/* .option:hover .option {
+    background: none;
+} */
 
 @media (max-width: 1000px) {
 
