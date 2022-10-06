@@ -53,6 +53,7 @@ function OneSerie() {
       >
         <div className={styles.filter}>
           <img
+            loading="lazy"
             className={styles.backgroud_mobile}
             src={serieUnit?.backdrop}
             alt=""
@@ -71,11 +72,13 @@ function OneSerie() {
               </div>
               <div className={styles.btns_add_group}>
                 <img
+                  loading="lazy"
                   className={styles.btn_add}
                   src="/images/watchlist-icon.svg"
                   alt=""
                 />
                 <img
+                  loading="lazy"
                   className={styles.btn_group}
                   src="/images/group-icon.png"
                   alt=""

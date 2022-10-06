@@ -53,6 +53,7 @@ function OneMovie() {
       >
         <div className={styles.filter}>
           <img
+            loading="lazy"
             className={styles.backgroud_mobile}
             src={movieUnit?.backdrop}
             alt=""
@@ -63,6 +64,7 @@ function OneMovie() {
             <div className={styles.buttons}>
               <div className={styles.btn_play}>
                 <img
+                  loading="lazy"
                   className={styles.icon_play}
                   src="/images/play-icon-black.png"
                   alt=""
@@ -71,11 +73,13 @@ function OneMovie() {
               </div>
               <div className={styles.btns_add_group}>
                 <img
+                  loading="lazy"
                   className={styles.btn_add}
                   src="/images/watchlist-icon.svg"
                   alt=""
                 />
                 <img
+                  loading="lazy"
                   className={styles.btn_group}
                   src="/images/group-icon.png"
                   alt=""
